@@ -14,6 +14,10 @@ static const char* logTAG = "LOAD";
 #define ERR_GPIO_SET_LEVEL "Failed to change GPIO level"
 #define ERR_GPIO_SET_MODE "Failed to set GPIO mode"
 
+#ifndef CONFIG_SNTP_TIMEZONE_SECONDS
+#define CONFIG_SNTP_TIMEZONE_SECONDS 0
+#endif
+
 // -----------------------------------------------------------------------------------------------------------------------
 // --------------------------------------------------- rLoadController ---------------------------------------------------
 // -----------------------------------------------------------------------------------------------------------------------
