@@ -2,7 +2,9 @@
 #include <string.h>
 #include "reNvs.h"
 #include "reEvents.h"
+#ifndef CONFIG_MQTT1_OFF
 #include "reMqtt.h"
+#endif 
 #include "reEsp32.h"
 #include "rLog.h"
 #include "rStrings.h"
